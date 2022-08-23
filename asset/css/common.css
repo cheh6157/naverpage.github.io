@@ -1,0 +1,92 @@
+body{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+/* 사진테두리 */
+.thumb-bd{
+    display: block;
+    position: relative;
+}
+.thumb-bd::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
+.thumb-bd img{width: 100%;}
+
+
+.header .logo-area .logo a::after,
+.header .search-area .icn-search,
+.header .top-search .link-set::after,
+.header .top-search .link-jn,
+.header .top-search .link-hb,
+.nav-area .nav-inner .nav-list .icn-mail,
+.nav-area .nav-item .icn-live,
+.nav-area .nav-item .icn-play,
+.nav-area .nav-inner .btn-more::after,
+.header .search-area .icn-keyboard,
+.weather .wth-item .air-dust::before,
+.sc-newscast .issue-area .link-title::after,
+.sc-newscast .group-title .news-stand::before,
+.sc-newscast .group-title .news-stand::after,
+.sc-newscast .set-area .btn-set.ic-list,
+.sc-newscast .set-area .btn-set.ic-title,
+.sc-newscast .set-area .btn-set.ic-set,
+.sc-themecast .group-title .info-area .btn-set::before,
+.group-category .category-area .btn-prev .bt-icn,
+.group-category .category-area .btn-next .bt-icn,
+.group-funding .theme-title .funding-title::after,
+.group-funding .funding-area .btn-next .ico-btn,
+.sc-themecast .more-wrap .btn-more .icn-more,
+.right-area .sc-login .link-login .icn-naver,
+.right-area .sc-login .group-link .link-id::before,
+.right-area .sc-login .group-link .link-join::before,
+.sc-midbanner .btn-area .btn-prev::before,
+.sc-midbanner .btn-area .btn-next::before,
+.footer .notice-box .link-all::after
+
+{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 457px;
+    
+}
+.group-theme .mark-area .ad-mark::after{
+    background-image: url(../images/spimg2.png);
+    background-size: 78px 72px;
+    background-repeat: no-repeat;
+}
+
+.right-area .shop-header .shop-title::before,
+.right-area .shop-header .shop-title::after,
+.group-goods .shop-control .btn-prev::before,
+.group-goods .shop-control .btn-next::before,
+.group-goods .shop-page .btn-prev::before,
+.group-goods .shop-page .btn-next::before,
+.group-event .shop-control .btn-next::before,
+.group-event .shop-control .btn-prev::before,
+.group-plus .shop-control .btn-prev::before,
+.group-plus .shop-control .btn-next::before,
+.right-area .shop-title .title::before,
+.plus-deal .item-pic .pic-box .thumb-bd .one-plus,
+.plus-deal .item-pic .pic-boxx::before,
+.plus-deal .item-pic .pic-box .thumb-bd .one-alpa
+
+{
+    background-image: url(../images/spimg.png);
+    background-size: 107px 101px;
+    background-repeat: no-repeat;
+}
